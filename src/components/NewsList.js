@@ -17,11 +17,11 @@ const NewsListBlock = styled.div`
 `;
 
 const NewsList = ({category}) => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
     const[articles, setArticles] = useState(null);
     const[loading, setLoading] = useState(false);
 
     useEffect(()=>{
+        const API_KEY = process.env.REACT_APP_API_KEY;
         // async를 사용하는 함수 따로 선언
         const fetchData = async () => {
             setLoading(true);
