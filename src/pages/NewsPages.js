@@ -6,7 +6,6 @@ const NewsPage = () => {
     // 카테고리가 선택되지 않았으면 기본값 all 사용
     const params = useParams();
     const category = params.category || 'all';
-    console.log(params);
 
     return(
         <>
